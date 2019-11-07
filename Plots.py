@@ -62,7 +62,7 @@ class Mollweide:
         vphi , utheta = vphi[::4,::10] , utheta[::4,::10]
         self.q = self.ax.quiver(x,y,vphi,utheta)
 
-    def shadow(self,pos_phi,pos_theta):
+    def shadow(self,pos_phi,pos_theta):  # Doesn't really work
         sha = 1-(self.Phi-pos_phi)**4*(self.Theta-pos_theta)**4
         self.imshadow = self.ax.pcolormesh(self.Phi-np.pi,self.Theta-np.pi/2, sha, cmap='gray',alpha=0.9)
 
@@ -71,6 +71,8 @@ class Mollweide:
         
 
 # Movies of results
+# It works better when done from main.py for some reason..
+
 def Movie(result,var,plot,scale='lin',mask=0):
     M,a,D,T,u0,v0,zeta0,Ntheta,Nphi,dt,Nt,m1,R1,zhat1,omega1,psi1 = read_data()
     Theta,Phi = get_grid()
@@ -94,6 +96,8 @@ def Movie(result,var,plot,scale='lin',mask=0):
         M.update(data)
         M.set_time(i*dt)
         plt.pause(0.05)
+
+
 
 
 
