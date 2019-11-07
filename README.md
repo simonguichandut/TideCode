@@ -6,7 +6,7 @@ This project was created in the context of the [2019 McGill Physics Hackathon](h
 
 Our presentation can be found [here](https://docs.google.com/presentation/d/1e4v-OOaLhNhDVOC3KVcAQqDPKq7CV9Q904R-i-lJ_3E/edit?usp=sharing).
 
-# The team
+### The team
 [Mathieu Bergeron](https://github.com/fasttachyon) - MSc. student at Université de Sherbrooke    
 [Oscar Céspedes](https://github.com/oscar-CV) - MSc. student at Polytechnique Montréal            
 [Simon Guichandut](https://github.com/simonguichandut) - MSc. student at McGill University            
